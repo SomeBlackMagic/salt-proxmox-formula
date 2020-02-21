@@ -2,7 +2,7 @@ remove_subscription_notice:
   file.replace:
     - name: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
     - pattern: {{ 'data.status !== \'Active\'' | regex_escape }}
-    - repl: 'true'
+    - repl: 'false'
     - backup: True
 
 full_hostname_in_lxd:
