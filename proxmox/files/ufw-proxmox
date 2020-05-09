@@ -1,0 +1,25 @@
+[Proxmox_Web]
+title=Web interface
+description=Web interface 8006 (TCP, HTTP/1.1 over TLS)
+ports=8006/tcp
+
+[Proxmox_VNC]
+title=VNC Web console
+description=5900-5999 (TCP, WebSocket)
+ports=5900:5999/tcp
+
+[Proxmox_SPICE]
+title=SPICE proxy
+description=SPICE proxy
+ports=3128/tcp
+
+[Proxmox_rpcbind]
+title=rpcbind
+description=rpcbind
+ports=111/udp
+
+[Proxmox_corosync]
+title=corosync cluster traffic
+description=corosync cluster traffic
+ports=5404,5405/udp
+
